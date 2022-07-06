@@ -1,0 +1,160 @@
+.projects__list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.projects__list_wrap {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.projects__item {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.projects__inner {
+  position: relative;
+  cursor: pointer;
+}
+
+.projects__inner_img {
+  max-width: 379px;
+  max-height: 340px;
+  display: block;
+  position: relative;
+}
+
+.projects__inner_title {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -40%, 0);
+  transition: opacity .2s linear;
+}
+
+.projects__inner_text {
+  width: 100%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  z-index: 2;
+  transform: translate3d(0, -60%, 0);
+  transition: opacity .2s linear;
+}
+
+.projects__inner:hover {
+  .projects__inner_title, .projects__inner_text {
+    opacity: 1;
+  }
+
+  .projects__inner_img img {
+    opacity: .1;
+  }
+}
+
+.projects__inner_img {
+  background: rgba(255, 67, 67, 0.8);
+  transition: transform .1s linear;
+
+  &:active {
+    background: rgba(185, 12, 12, 0.8);
+    transition: transform .1s linear;
+  }
+
+  img {
+    display: block;
+    transition: opacity .3s linear;
+  }
+}
+
+/* Checkpoints for Adaptive */
+
+@media (max-width: 1230px) {}
+
+@media (max-width: 1025px) {
+  .projects {
+
+    &__inner_img,
+    &__inner_img img{
+      max-width: 256px;
+      max-height: 230px;
+    }
+    &__inner_title {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    &__inner_text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {}
+
+@media (max-width: 330px) {
+
+  .projects {
+
+    &__list {
+      flex-wrap: wrap;
+    }
+    &__list_wrap {
+      max-width: 160px;
+      display: block;
+    }
+    // &__item {
+    //   max-width: 160px;
+    //   max-height: 144px;
+    // }
+    // &__inner_img {
+    //   max-width: 160px;
+    //   max-height: 144px;
+    // }
+    &__inner_img img{
+      max-width: 160px;
+      max-height: 144px;
+    }
+    &__inner_title{
+      max-width: 158px;
+    }
+    &__inner_text {
+      max-width: 158px;
+    }
+  }
+  #project-container {
+    padding: 0;
+    margin: 0;
+  }
+}
