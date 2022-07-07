@@ -30,8 +30,14 @@
   font-weight: 700;
   line-height: 21px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffffe8;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.footer__inner_title:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 
 .footer__inner_address {
@@ -42,6 +48,7 @@
   text-align: center;
   font-style: normal;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .about__text {

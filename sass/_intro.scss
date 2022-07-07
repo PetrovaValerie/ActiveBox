@@ -1,6 +1,6 @@
 .intro {
   min-height: 750px;
-  background: url('../img/bg/main-bg.jpg') (center / cover) no-repeat;
+  background: #31344e url('../img/bg/main-bg.jpg') (center / cover) no-repeat;
   color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
   display: flex;
@@ -20,6 +20,7 @@
     line-height: 75px;
     text-align: center;
     text-transform: uppercase;
+    cursor: pointer;
     }
 
     &__descr {
@@ -28,6 +29,7 @@
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    color: #ffffffb5;
     }
 }
 
@@ -44,13 +46,14 @@
   min-width: 370px;
   min-height: 77px;
   background: #FF4343;
-  transition: background .2s .2s linear;
+  transition: background .2s .2s ease-in-out;
 
   &:hover {
     background: #E71414;
   }
 
   &:active {
+    background: #FF4343;
     box-shadow: 4px 4px 30px #FF4343;
   }
 }
@@ -87,13 +90,20 @@
 
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .intro {
+    height: auto;
+    padding-top: 130px;
+    padding-bottom: 30px;
+  }
+}
 
 @media (max-width: 576px) {}
 
 @media (max-width: 330px) {
     .intro {
     min-height: 574px;
+    padding-top: 70px;
     &__inner {
       padding: 0;
     }
@@ -105,7 +115,7 @@
     }
 
     &__title {
-      margin-top: 130px;
+      margin-top: 55px;
       max-width: 280px;
       font-size: 36px;
       line-height: 42px;

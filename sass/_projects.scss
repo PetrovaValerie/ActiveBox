@@ -10,10 +10,12 @@
   padding: 0;
   margin: 0;
   width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .projects__item {
   width: 100%;
   padding: 0;
@@ -48,6 +50,10 @@
   z-index: 2;
   transform: translate3d(0, -40%, 0);
   transition: opacity .2s linear;
+}
+
+.projects__inner_title:hover {
+  text-decoration: underline;
 }
 
 .projects__inner_text {
