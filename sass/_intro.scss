@@ -9,28 +9,28 @@
     justify-content: center;
 
     &__inner {
-    padding: 0 55px;
+      padding: 0 55px;
     }
 
     &__title {
-    max-width: 1025px;
-    margin: 0 auto;
-    margin-top: 200px;
-    font-size: 64px;
-    font-weight: 900;
-    line-height: 75px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
+      max-width: 1025px;
+      margin: 0 auto;
+      margin-top: 200px;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 75px;
+      text-align: center;
+      text-transform: uppercase;
+      cursor: pointer;
     }
 
     &__descr {
-    padding-top: 28px;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 28px;
-    text-align: center;
-    color: #ffffffb5;
+      padding-top: 28px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+      text-align: center;
+      color: #ffffffb5;
     }
 }
 

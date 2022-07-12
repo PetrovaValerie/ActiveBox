@@ -186,24 +186,24 @@ label, a {
 }
 
 @media (max-width: 992px) {
+
   .article__inner {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 340px;
-    margin: 0;
   }
 
   #slider {
     margin: 0;
-    margin-left: -15px;
   }
 
   #desktop:checked ~ #slider {
     min-width: 330px;
   }
 
-  .content__slider-pic {
+  article img {
     max-width: 330px;
+    min-height: 212px;
   }
 
   .content__desc {
@@ -258,7 +258,6 @@ label, a {
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 340px;
-    margin: 0;
   }
 
   #slider {
@@ -313,6 +312,15 @@ label, a {
 }
 
 @media (max-width: 325px) {
+
+  #slider {
+    margin: 0;
+    margin-left: -15px;
+  }
+
+  .article__inner {
+    margin:0;
+  }
 
   .content__slider-pic {
     min-width: 55%;
