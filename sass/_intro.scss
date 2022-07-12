@@ -89,6 +89,18 @@
     height: auto;
     padding-top: 130px;
     padding-bottom: 30px;
+
+    &__title {
+      margin-top: 55px;
+      max-width: 280px;
+      font-size: 36px;
+      line-height: 42px;
+    }
+    &__btn {
+      margin: 48px auto 50px;
+      min-width: 240px;
+      min-height: 60px;
+    }
   }
 }
 

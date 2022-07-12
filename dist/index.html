@@ -5,247 +5,263 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/b2e8fbb2d7.js" crossorigin="anonymous"></script>
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<!-- <link rel="stylesheet" href="./css/style.css"> -->
 	<link rel="stylesheet" href="/index.3ca998d7.css">
 	<title>ActiveBox</title>
 </head>
 <body>
-																<!--HEADER---->	
+																<!--HEADER---->
 <header class="header">
-	<div class="container">
-		<nav class="header__nav">
-			<div class="header__wrapper menu">
-				<div class="menu__logo">
-					<a href="#">
-						<img class="menu__logo_img" src="/ACTIVEBOX.86a657b8.png" alt="logo">
-					</a>
-				</div>
+	<div class="header-container">
+		<div class="header__wrapper menu">
+				<a class="menu__logo" href="#">
+					<img class="menu__logo_img" src="/ActiveBox-Logo.5d7fa4e3.png" alt="logo">
+				</a>
+			<nav class="menu__body">
 				<ul class="menu__list">
-					<li class="menu__list_item">
-						<a href="#">Features</a>
+					<li class="menu__item">
+						<a data-goto=".features" class="menu__item_link" href="#">Features</a>
 					</li>
-					<li class="menu__list_item">
-						<a href="#">Works</a>
+					<li class="menu__item">
+						<a data-goto=".projects" class="menu__item_link" href="#">Works</a>
 					</li>
-					<li class="menu__list_item">
-						<a href="#">Our Team</a>
+					<li class="menu__item">
+						<a data-goto=".team" class="menu__item_link" href="#">Our Team</a>
 					</li>
-					<li class="menu__list_item">
-						<a href="#">Testimonials</a>
+					<li class="menu__item">
+						<a data-goto=".slide" class="menu__item_link" href="#">Testimonials</a>
 					</li>
-					<li class="menu__list_item">
-						<a href="#">Download</a>
+					<li class="menu__item">
+						<a data-goto=".download" class="menu__item_link" href="#">Download</a>
 					</li>
 				</ul>
-			</div>	
-		</nav>
+			</nav>
+					<div class="menuToggle icon" id="nav_toggle">
+						<span class="hamburger"></span>
+					</div>
+			</div>
 	</div>
 </header>
+<main>
 																<!--INTRO---->	
-<div class="intro">
-	<h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
-	<p class="intro__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
-		vel scelerisque nisl consectetur et.</p>
-	<button class="intro__btn">Find out more</button>
-</div>
+	<div class="intro">
+		<div class="intro-container container">
+			<div class="intro__inner">
+				<h1 class="intro__title">Your Favorite One PageMulti Purpose Template</h1>
+				<p class="intro__descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+				vel scelerisque nisl consectetur et.</p>
+				<button class="intro__btn">Find out more</button>
+			</div>
+		</div>
+	</div>
 																<!--FEATURES---->	
-<section class="features">
-	<div class="container">
+	<section class="features">
+		<div class="container">
 		<div class="features__inner">
 			<div class="features__row">
 				<div class="features__card">
 					<img class="features__card_icon" src="/easily-customized.cc448cfa.png" alt="#">
 					<h2 class="features__card_title">Easily Customised</h2>
 					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 				<div class="features__card">
 					<img class="features__card_icon" src="/responsive-ready.b41e0d82.png" alt="#">
 					<h2 class="features__card_title">Responsive Ready</h2>
 					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 				<div class="features__card">
 					<img class="features__card_icon" src="/modern-design.acfc6a33.png" alt="#">
 					<h2 class="features__card_title">Modern Design</h2>
 					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 			</div>
-				<div class="features__row">
+			<div class="features__row">
 				<div class="features__card">
 					<img class="features__card_icon" src="/clean-code.e3670432.png" alt="#">
 					<h2 class="features__card_title">Clean Code</h2>
 					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 				<div class="features__card">
 					<img class="features__card_icon" src="/ready-to-ship.b9d50006.png" alt="#">
 					<h2 class="features__card_title">Ready to Ship</h2>
 					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 				<div class="features__card">
 					<img class="features__card_icon" src="/download-for-free.ffb6214f.png" alt="#">
 					<h2 class="features__card_title">Download for Free</h2>
-					<p class="features__card_desc">Cras justo odio, dapibus ac facilisis in,
-						egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
-						Donec ullamcorper nulla non metus auctor fringilla.</p>
+					<p class="features__card_desc card__desc">Cras justo odio, dapibus ac facilisis in,
+					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
 			</div>
 		</div>
-	</div><!--Container-->
-</section>
-															<!--PROJECTS---->	
-<section class="projects">
-	<div class="container">
-		<div class="projects__list upper-list">
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+		</div>
+	</section>
+																<!--PROJECTS---->	
+	<section class="projects">
+		<div class="container" id="project-container">
+			<div class="projects__list upper-list">
+				<div class="projects__list_wrap">
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r1c1.9a371a7f.png" alt="table">	
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
-				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+						</div>
+					</div>
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r1c2.552c029d.png" alt="grey couch">	
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+				<div class="projects__list_wrap">
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r1c3.22c942e5.png" alt="black couch">	
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
-				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+						</div>
+					</div>
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r1c4.c1b0a87e.png" alt="two stools">
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
+						</div>
+					</div>				
 				</div>
 			</div>
-		</div>
-		<div class="projects__list lower-list">
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+			<div class="projects__list lower-list">
+				<div class="projects__list_wrap">
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r2c1.18948819.png" alt="yellow chair">	
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
-				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
+						</div>
+					</div>
+					<div class="projects__item">
+						<div class="projects__inner">
+						<div class="projects__inner_img">
 						<img src="/r2c2.140be277.png" alt="brown table">	
-					</div>
+						</div>
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
-				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
-						<img src="/r2c3.059e57e7.png" alt="black bed">
+						</div>
 					</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
 				</div>
-			</div>
-			<div class="projects__item">
-				<div class="projects__inner">
-					<div class="projects__inner_img">
-						<img src="/r2c4.2d6f8013.png" alt="beige couch">	
+					<div class="projects__list_wrap">
+						<div class="projects__item">
+							<div class="projects__inner">
+							<div class="projects__inner_img">
+							<img src="/r2c3.059e57e7.png" alt="black bed">
+							</div>
+							<h4 class="projects__inner_title">Project Name</h4>
+							<p class="projects__inner_text">User Interface Design</p>
+							</div>
+						</div>
+						<div class="projects__item">
+							<div class="projects__inner">
+							<div class="projects__inner_img">
+							<img src="/r2c4.2d6f8013.png" alt="beige couch">	
+							</div>
+							<h4 class="projects__inner_title">Project Name</h4>
+							<p class="projects__inner_text">User Interface Design</p>
+							</div>
+						</div>
 					</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
+
+	
 																<!--TEAM---->	
-<section class="team">
-	<div class="container">
-		<div class="team__inner">
-			<div class="team__card">
-				<img class="team__card_img" src="/Ruth%20Woods.1028b44d.png" alt="Company founder">
-				<h4 class="team__card_name">Ruth woods</h4>
-				<span class="team__card_position">founder, ceo</span>
-				<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+	<section class="team">
+		<div class="container">
+			<div class="team__inner">
+				<div class="team__card">
+					<img class="team__card_img" src="/Ruth%20Woods.1028b44d.png" alt="Company founder">
+					<h4 class="team__card_name">Ruth woods</h4>
+					<span class="team__card_position">founder, ceo</span>
+					<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
 					ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
 					Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<div class="team__card_socials socials">
-						<i class="fa-brands fa-facebook-f socials__icon"></i>
-						<i class="fa-brands fa-twitter socials__icon"></i>
-						<i class="fa-brands fa-linkedin socials__icon"></i>
+					<i class="fa-brands fa-facebook-f socials__icon"></i>
+					<i class="fa-brands fa-twitter socials__icon"></i>
+					<i class="fa-brands fa-linkedin socials__icon"></i>
 					</div>
-			</div>
-			<div class="team__card">
-				<img class="team__card_img" src="/Timothy%20Reed.9bdc5519.png" alt="Company developer">
-				<h4 class="team__card_name">Timothy Reed</h4>
-				<span class="team__card_position">co-founder, developer</span>
-				<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+				</div>
+				<div class="team__card">
+					<img class="team__card_img" src="/Timothy%20Reed.9bdc5519.png" alt="Company developer">
+					<h4 class="team__card_name">Timothy Reed</h4>
+					<span class="team__card_position">co-founder, developer</span>
+					<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
 					ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
 					Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<div class="team__card_socials socials">
-						<i class="fa-brands fa-facebook-f socials__icon"></i>
-						<i class="fa-brands fa-twitter socials__icon"></i>
-						<i class="fa-brands fa-linkedin socials__icon"></i>
+					<i class="fa-brands fa-facebook-f socials__icon"></i>
+					<i class="fa-brands fa-twitter socials__icon"></i>
+					<i class="fa-brands fa-linkedin socials__icon"></i>
 					</div>
-			</div>
-			<div class="team__card">
-				<img class="team__card_img" src="/Victoria.ee4ee289.png" alt="UI designer">
-				<h4 class="team__card_name">Victoria Vladez</h4>
-				<span class="team__card_position">ui designer</span>
-				<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+				</div>
+				<div class="team__card">
+					<img class="team__card_img" src="/Victoria.ee4ee289.png" alt="UI designer">
+					<h4 class="team__card_name">Victoria Vladez</h4>
+					<span class="team__card_position">ui designer</span>
+					<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
 					ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
 					Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<div class="team__card_socials socials">
-						<i class="fa-brands fa-facebook-f socials__icon"></i>
-						<i class="fa-brands fa-twitter socials__icon"></i>
-						<i class="fa-brands fa-linkedin socials__icon"></i>
+					<i class="fa-brands fa-facebook-f socials__icon"></i>
+					<i class="fa-brands fa-twitter socials__icon"></i>
+					<i class="fa-brands fa-linkedin socials__icon"></i>
 					</div>
-			</div>
-			<div class="team__card">
-				<img class="team__card_img" src="/Beverly.c5e8c3cc.png" alt="Data scientist">
-				<h4 class="team__card_name">Beverly Little</h4>
-				<span class="team__card_position">data scientist</span>
-				<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+				</div>
+				<div class="team__card">
+					<img class="team__card_img" src="/Beverly.c5e8c3cc.png" alt="Data scientist">
+					<h4 class="team__card_name">Beverly Little</h4>
+					<span class="team__card_position">data scientist</span>
+					<p class="team__card_desc">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
 					ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna.
 					Nullam quis risus eget urna mollis ornare vel eu leo.</p>
 					<div class="team__card_socials socials">
-						<i class="fa-brands fa-facebook-f socials__icon"></i>
-						<i class="fa-brands fa-twitter socials__icon"></i>
-						<i class="fa-brands fa-linkedin socials__icon"></i>
+					<i class="fa-brands fa-facebook-f socials__icon"></i>
+					<i class="fa-brands fa-twitter socials__icon"></i>
+					<i class="fa-brands fa-linkedin socials__icon"></i>
 					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 																<!--SLIDER---->
-<section class="slide">
-	<div class="container">
-		<div class="all">
-			<input checked="" type="radio" name="respond" id="desktop">
+	<section class="slide">
+		<div class="container slide-container">
+			<div class="all">
+				<input checked="" type="radio" name="respond" id="desktop">
 				<article id="slider">
 					<input checked="" type="radio" name="slider" id="switch1">
 					<input type="radio" name="slider" id="switch2">
@@ -254,107 +270,109 @@
 					<input type="radio" name="slider" id="switch5">
 					<div id="slides">
 						<div id="overflow">
-							<div class="image">
-									<article>
-										<div class="article__inner">
-											<img class="image__slider-pic" src="/women.4f29dd0b.jpg" alt="women are looking at the monitor">
-											<div class="image__desc">
-													<p class="image__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-													<span class="image__desc_author">Susan Sims, Interaction Designer at XYZ</span>
-											</div>
-										</div>
-									</article>
-									<article>
-										<div class="article__inner">
-											<img class="image__slider-pic" src="/women.4f29dd0b.jpg" alt="women are looking at the monitor">
-											<div class="image__desc">
-													<p class="image__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-													<span class="image__desc_author">Susan Sims, Interaction Designer at XYZ</span>
-											</div>
-										</div>
-									</article>
-									<article>
-										<div class="article__inner">
-											<img class="image__slider-pic" src="/women.4f29dd0b.jpg" alt="women are looking at the monitor">
-											<div class="image__desc">
-													<p class="image__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-													<span class="image__desc_author">Susan Sims, Interaction Designer at XYZ</span>
-											</div>
-										</div>
-									</article>
-									<article>
-										<div class="article__inner">
-											<img class="image__slider-pic" src="/women.4f29dd0b.jpg" alt="women are looking at the monitor">
-											<div class="image__desc">
-													<p class="image__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-													<span class="image__desc_author">Susan Sims, Interaction Designer at XYZ</span>
-											</div>
-										</div>
-									</article>
-									<article>
-										<div class="article__inner">
-											<img class="image__slider-pic" src="/women.4f29dd0b.jpg" alt="women are looking at the monitor">
-											<div class="image__desc">
-													<p class="image__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
-													<span class="image__desc_author">Susan Sims, Interaction Designer at XYZ</span>
-											</div>
-										</div>
-									</article>
-								</div>
+							<div class="content">
+								<article>
+									<div class="article__inner">
+									<img class="content__slider-pic" src="/two-women.12551fa9.jpg" alt="women are looking at the monitor">
+									<div class="content__desc">
+									<p class="content__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
+									</div>
+									</div>
+								</article>
+								<article>
+									<div class="article__inner">
+									<img class="content__slider-pic" src="/good-faces.a7d6dfff.jpg" alt="girl is sitting beside the monitor">
+									<div class="content__desc">
+									<p class="content__desc_text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+									Autem, dolores, odit, quo maiores . Aenean eu leo.”</p>
+									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
+									</div>
+									</div>
+								</article>
+								<article>
+									<div class="article__inner">
+									<img class="content__slider-pic" src="/company-project.7b5951fb.jpg" alt="three women are talking and laughing">
+									<div class="content__desc">
+									<p class="content__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui.”</p>
+									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
+									</div>
+									</div>
+								</article>
+								<article>
+									<div class="article__inner">
+									<img class="content__slider-pic" src="/thought-catalog.e13c2703.jpg" alt="woman is looking at the monitor">
+									<div class="content__desc">
+									<p class="content__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quamt.”</p>
+									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
+									</div>
+									</div>
+								</article>
+								<article>
+									<div class="article__inner">
+									<img class="content__slider-pic" src="/linkedin-sales.9c498791.jpg" alt="woman is standing in the office beside the laptop">
+									<div class="content__desc">
+									<p class="content__desc_text">“Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec sed odio dui. Aenean eu leo quam...”</p>
+									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
+									</div>
+									</div>
+								</article>
 							</div>
 						</div>
-						<div id="controls">
-							<label for="switch1"></label>
-							<label for="switch2"></label>
-							<label for="switch3"></label>
-							<label for="switch4"></label>
-							<label for="switch5"></label>
-						</div>
-						<div id="active">
-							<label for="switch1"></label>
-							<label for="switch2"></label>
-							<label for="switch3"></label>
-							<label for="switch4"></label>
-							<label for="switch5"></label>
-						</div>
-			</article>
+					</div>
+					<div id="controls">
+						<label for="switch1"></label>
+						<label for="switch2"></label>
+						<label for="switch3"></label>
+						<label for="switch4"></label>
+						<label for="switch5"></label>
+					</div>
+					<div id="active">
+						<label for="switch1"></label>
+						<label for="switch2"></label>
+						<label for="switch3"></label>
+						<label for="switch4"></label>
+						<label for="switch5"></label>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+																<!--DOWNLOAD---->
+	<div class="download">
+		<div class="container">
+			<p class="download__slogan">Are You Ready to Start? Download Now For Free!</p>
+			<span class="download__desc">Fusce dapibus, tellus ac cursus commodo</span>
+			<button class="download__btn">Download Here</button>
 		</div>
 	</div>
-</section>
-																<!--DOWNLOAD---->
-<div class="download">
-	<div class="container">
-		<p class="download__slogan">Are You Ready to Start? Download Now For Free!</p>
-		<span class="download__desc">Fusce dapibus, tellus ac cursus commodo</span>
-		<button class="download__btn">Download Here</button>
-	</div>
-</div>
+</main>
 																<!--FOOTER---->
 <footer class="footer">
-<div class="container">
-	<div class="footer__inner">
-		<div class="footer__inner_item footer__item--direct">
-			<h5 class="footer__inner_title">Location</h5>
-			<address class="footer__direct_address">3481 Melrose Place
-				Beverly Hills, CA 90210</address>
-		</div>
-		<div class="footer__inner_item footer__item--socials">
-			<h5 class="footer__inner_title">Share with love</h5>
-			<i class="fa-brands fa-facebook-f social__icon"></i>
-			<i class="fa-brands fa-twitter social__icon"></i>
-			<i class="fa-brands fa-linkedin social__icon"></i>			
-		</div>
-		<div class="footer__inner_item footer__item--about">
-			<h5 class="footer__inner_title">About Activebox</h5>
-			<p class="about__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-				Donec ullamcorper nulla non metus auctor fringilla.</p>
+	<div class="container">
+		<div class="footer__inner">
+			<div class="footer__inner_item footer__item--location">
+				<h5 class="footer__inner_title">Location</h5>
+				<address class="footer__inner_address">3481 Melrose Place
+					Beverly Hills, CA 90210</address>
+			</div>
+			<div class="footer__inner_item footer__item--socials">
+				<h5 class="footer__inner_title socials__title">Share with love</h5>
+				<i class="fa-brands fa-facebook-f social__icon"></i>
+				<i class="fa-brands fa-twitter social__icon"></i>
+				<i class="fa-brands fa-linkedin social__icon"></i>			
+			</div>
+			<div class="footer__inner_item footer__item--about">
+				<h5 class="footer__inner_title about__title">About Activebox</h5>
+				<p class="about__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+					Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</div>
 		</div>
 	</div>
-</div>
-	<div class="copyright">
-		<p class="copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved
-		Made with <span class="copyright__text_head">by Kamal Chaneman</span></p>
-	</div> 
+		<div class="copyright">
+			<p class="copyright__text">Copyright © 2015 ActiveBox. All Rights Reserved
+			Made with <span class="copyright__text_head">by Kamal Chaneman</span></p>
+		</div> 
 </footer>
 
 <script src="/index.5d9dacde.js" defer=""></script>
