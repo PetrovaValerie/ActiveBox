@@ -12,17 +12,17 @@
 
 
 .container {
-  width: 100%;
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .header-container {
-  width: 100%;
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 /* Checkpoints for Adaptive */
@@ -30,6 +30,7 @@
 @media (max-width: 1230px) {}
 
 @media (max-width: 1030px) {
+  
   .container {
     margin: 0 auto;
     padding: 0 15px;

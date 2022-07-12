@@ -1,14 +1,9 @@
 @charset "UTF-8";
-body._lock {
-  overflow: hidden;
-}
-
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  min-height: 56px;
   z-index: 10;
 }
 
@@ -26,19 +21,16 @@ body._lock {
       -ms-flex-pack: justify;
           justify-content: space-between;
   min-height: 95px;
-  background: rgba(49, 52, 78, 0.4705882353);
-  border-bottom: 1px solid #BABBC5;
+  border-bottom: 1px solid rgba(186, 187, 197, 0.6392156863);
 }
-
 .menu__logo {
   display: block;
   position: relative;
   z-index: 5;
 }
-
 .menu__logo_img {
   max-width: 184px;
-  max-height: 93px;
+  max-height: 37px;
 }
 
 .menu__list > li {
@@ -55,8 +47,17 @@ body._lock {
   padding: 43px 30px;
   border-bottom: 3px solid transparent;
 }
+.menu__item_link {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
 .menu__item a {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.9098039216);
   text-decoration: none;
 }
 .menu__item:hover {
@@ -66,14 +67,8 @@ body._lock {
   border-bottom: 3px solid #E71414;
 }
 
-.menu__item_link {
-  font-family: "Raleway", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
+.menu__item a:active {
+  color: #E71414;
 }
 
 body._touch .menu__list > li {
@@ -110,14 +105,13 @@ body._touch .menu__item_link {
 }
 @media (max-width: 767px) {
   .menu {
-
+    border-bottom: 0;
     min-height: 56px;
     padding: 0 15px 0 25px;
   }
-
   .menu__logo_img {
-    max-width: 150px;
-    max-height: 70px;
+    max-width: 136px;
+    max-height: 33px;
   }
 
   .icon {
@@ -168,6 +162,10 @@ body._touch .menu__item_link {
     потому что ранее задали transition*/
   }
 
+  body._lock {
+    overflow: hidden;
+  }
+
   .icon._active::before {
     top: 50%;
     -webkit-transform: rotate(-45deg) translate(0px, -50%);
@@ -186,7 +184,7 @@ body._touch .menu__item_link {
     top: 0;
     left: 0;
     -moz-text-align-last: left;
-    text-align-last: left;
+         text-align-last: left;
     width: 100%;
     min-height: 574px;
     background: #31344e url("../img/bg/main-bg.jpg") center/cover no-repeat;
@@ -201,11 +199,27 @@ body._touch .menu__item_link {
   }
 
   .menu__list {
-    border-top: 1px solid rgba(237, 80, 80, 0.548);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu__list::before {
+    content: "";
+    display: block;
+    min-width: 330px;
+    height: 1px;
+    background: rgba(237, 80, 80, 0.548);
+    margin: -30px 0 0 -30px;
   }
 
   .menu__body._active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     left: 0;
   }
 
@@ -220,8 +234,6 @@ body._touch .menu__item_link {
   }
 
   .menu__list > li {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin: 0 0 30px 0;
   }
 
@@ -238,20 +250,12 @@ body._touch .menu__item_link {
   .menu__item:active {
     border-bottom: none;
   }
-
   .menu__item:first-child {
     padding: 15px;
     padding-top: 70px;
   }
-
   .menu__item:last-child {
     padding: 15px;
     padding-bottom: 190px;
   }
-}
-@media (max-width: 650px) {
-
-/* .intro-container {
-      border-top: 1px solid rgba(237, 80, 80, 0.548);
-} */
 }

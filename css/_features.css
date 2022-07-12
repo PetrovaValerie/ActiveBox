@@ -1,0 +1,118 @@
+.features__inner {
+  margin: 100px 0;
+  width: 100%;
+}
+.features__row {
+  padding: 0;
+  margin: 0 0 80px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.features__card_icon {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px;
+  max-height: 100px;
+  cursor: pointer;
+}
+.features__card_desc {
+  margin-right: 20px;
+  min-width: 370px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #6C7279;
+}
+.features__card_title {
+  margin: 45px auto;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #2D3033;
+}
+.features__card_title:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 1025px) {
+  .features__row {
+    margin: 0 0 40px 0;
+  }
+  .features__card_icon {
+    max-width: 85px;
+    max-height: 85px;
+  }
+  .features__card_title {
+    margin: 45px auto 25px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .features__card_desc {
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 314px;
+  }
+}
+@media (max-width: 992px) {
+  .features__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 335px;
+            flex: 1 1 335px;
+  }
+  .features__card_icon {
+    margin-top: 30px;
+  }
+  .features__card_desc {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 330px) {
+  .features__inner {
+    margin: 40px auto 35px;
+  }
+  .features__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  .features__card {
+    padding: 0;
+  }
+  .features__card_icon {
+    margin: 0 auto;
+    max-width: 75px;
+    max-height: 75px;
+  }
+  .features__card_title {
+    margin: 45px auto 15px;
+  }
+  .features__card_desc {
+    min-width: 280px;
+    margin: 0 auto;
+    padding: 0 8px 45px;
+  }
+}

@@ -72,10 +72,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-body._lock {
-  overflow: hidden;
-}
-
 .header {
   position: absolute;
   top: 0;
@@ -100,13 +96,11 @@ body._lock {
   min-height: 95px;
   border-bottom: 1px solid rgba(186, 187, 197, 0.6392156863);
 }
-
 .menu__logo {
   display: block;
   position: relative;
   z-index: 5;
 }
-
 .menu__logo_img {
   max-width: 184px;
   max-height: 37px;
@@ -126,6 +120,15 @@ body._lock {
   padding: 43px 30px;
   border-bottom: 3px solid transparent;
 }
+.menu__item_link {
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
 .menu__item a {
   color: rgba(255, 255, 255, 0.9098039216);
   text-decoration: none;
@@ -139,16 +142,6 @@ body._lock {
 
 .menu__item a:active {
   color: #E71414;
-}
-
-.menu__item_link {
-  font-family: "Raleway", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
 }
 
 body._touch .menu__list > li {
@@ -184,16 +177,11 @@ body._touch .menu__item_link {
   }
 }
 @media (max-width: 767px) {
-  .header {
-    position: fixed;
-  }
-
   .menu {
     border-bottom: 0;
     min-height: 56px;
     padding: 0 15px 0 25px;
   }
-
   .menu__logo_img {
     max-width: 136px;
     max-height: 33px;
@@ -247,6 +235,10 @@ body._touch .menu__item_link {
     потому что ранее задали transition*/
   }
 
+  body._lock {
+    overflow: hidden;
+  }
+
   .icon._active::before {
     top: 50%;
     -webkit-transform: rotate(-45deg) translate(0px, -50%);
@@ -280,11 +272,31 @@ body._touch .menu__item_link {
   }
 
   .menu__list {
-    border-top: 1px solid rgba(237, 80, 80, 0.548);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu__list::before {
+    content: "";
+    display: block;
+    min-width: 330px;
+    height: 1px;
+    background: rgba(237, 80, 80, 0.548);
+    margin: -30px 0 0 -30px;
   }
 
   .menu__body._active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     left: 0;
   }
 
@@ -299,8 +311,6 @@ body._touch .menu__item_link {
   }
 
   .menu__list > li {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     margin: 0 0 30px 0;
   }
 
@@ -317,12 +327,10 @@ body._touch .menu__item_link {
   .menu__item:active {
     border-bottom: none;
   }
-
   .menu__item:first-child {
     padding: 15px;
     padding-top: 70px;
   }
-
   .menu__item:last-child {
     padding: 15px;
     padding-bottom: 190px;
@@ -330,6 +338,7 @@ body._touch .menu__item_link {
 }
 .intro {
   min-height: 750px;
+  width: 100%;
   background: #31344e url("../img/bg/main-bg.jpg") center/cover no-repeat;
   color: #FFFFFF;
   font-family: "Raleway", sans-serif;
@@ -392,7 +401,6 @@ body._touch .menu__item_link {
           box-shadow: 4px 4px 30px #FF4343;
 }
 
-/* Checkpoints for Adaptive */
 @media (max-width: 1030px) {
   .intro {
     min-height: 770px;
@@ -452,7 +460,6 @@ body._touch .menu__item_link {
   margin: 100px 0;
   width: 100%;
 }
-
 .features__row {
   padding: 0;
   margin: 0 0 80px 0px;
@@ -464,10 +471,6 @@ body._touch .menu__item_link {
           justify-content: center;
 }
 
-.features__card:last-of-type {
-  padding-right: 0;
-}
-
 .features__card_icon {
   display: block;
   margin: 0 auto;
@@ -475,7 +478,16 @@ body._touch .menu__item_link {
   max-height: 100px;
   cursor: pointer;
 }
-
+.features__card_desc {
+  margin-right: 20px;
+  min-width: 370px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #6C7279;
+}
 .features__card_title {
   margin: 45px auto;
   font-family: "Raleway", sans-serif;
@@ -491,18 +503,6 @@ body._touch .menu__item_link {
   cursor: pointer;
 }
 
-.features__card_desc {
-  margin-right: 20px;
-  min-width: 370px;
-  font-family: "Raleway", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  color: #6C7279;
-}
-
-/* Checkpoints for Adaptive */
 @media (max-width: 1025px) {
   .features__row {
     margin: 0 0 40px 0;
@@ -522,9 +522,33 @@ body._touch .menu__item_link {
     min-width: 314px;
   }
 }
+@media (max-width: 992px) {
+  .features__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features__card {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 335px;
+            flex: 1 1 335px;
+  }
+  .features__card_icon {
+    margin-top: 30px;
+  }
+  .features__card_desc {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 330px) {
   .features__inner {
-    margin: 40px auto 35px;
+    margin: 40px auto 0;
   }
   .features__row {
     -webkit-box-orient: vertical;
@@ -537,6 +561,7 @@ body._touch .menu__item_link {
     padding: 0;
   }
   .features__card_icon {
+    margin: 0 auto;
     max-width: 75px;
     max-height: 75px;
   }
@@ -547,10 +572,6 @@ body._touch .menu__item_link {
     min-width: 280px;
     margin: 0 auto;
     padding: 0 8px 45px;
-  }
-
-  .card__desc {
-    margin-bottom: 0;
   }
 }
 .projects__list {
@@ -572,7 +593,6 @@ body._touch .menu__item_link {
   padding: 0;
   margin: 0;
   width: 100%;
-  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,10 +640,6 @@ body._touch .menu__item_link {
           transform: translate3d(0, -40%, 0);
   -webkit-transition: opacity 0.2s linear;
   transition: opacity 0.2s linear;
-}
-
-.projects__inner_title:hover {
-  text-decoration: underline;
 }
 
 .projects__inner_text {
@@ -687,7 +703,37 @@ body._touch .menu__item_link {
     line-height: 16px;
   }
 }
+@media (max-width: 768px) {
+  .projects {
+    max-width: 70vw;
+    margin: 0 auto;
+  }
+  .projects__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .projects__list_wrap {
+    width: 50%;
+    display: block;
+  }
+  .projects__item {
+    max-width: 100%;
+    max-height: 144px;
+  }
+  .projects__inner {
+    max-width: 100%;
+    max-height: 144px;
+  }
+  .projects__inner_img img {
+    min-width: 100%;
+    max-height: 144px;
+  }
+}
 @media (max-width: 330px) {
+  .projects {
+    max-width: 100%;
+    margin: 0;
+  }
   .projects__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -731,14 +777,12 @@ body._touch .menu__item_link {
 .team__card:last-of-type {
   margin-right: 0;
 }
-
 .team__card_img {
   display: block;
   max-width: 270px;
   max-height: 270px;
   cursor: pointer;
 }
-
 .team__card_name {
   margin-top: 35px;
   font-family: "Raleway", sans-serif;
@@ -752,7 +796,6 @@ body._touch .menu__item_link {
   text-decoration: underline;
   cursor: pointer;
 }
-
 .team__card_position {
   display: block;
   margin-top: 8px;
@@ -767,9 +810,9 @@ body._touch .menu__item_link {
 .team__card_position:hover {
   cursor: pointer;
 }
-
 .team__card_desc {
-  margin: 22px auto 37px;
+  max-width: 270px;
+  margin: 22px 0 37px;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -798,7 +841,6 @@ body._touch .menu__item_link {
   border: 1px solid rgb(119, 132, 229);
 }
 
-/* Checkpoints for Adaptive */
 @media (max-width: 1025px) {
   .team__card {
     margin-right: 20px;
@@ -825,6 +867,22 @@ body._touch .menu__item_link {
     min-height: 32px;
   }
 }
+@media (max-width: 992px) {
+  .team__inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .team__card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 290px;
+            flex: 0 1 290px;
+    margin-top: 25px;
+  }
+}
 @media (max-width: 330px) {
   .team {
     margin: 35px auto;
@@ -837,7 +895,7 @@ body._touch .menu__item_link {
   }
 
   .team__card {
-    margin-right: 0;
+    margin: 0;
   }
   .team__card_img {
     margin: 0 auto;
@@ -854,7 +912,7 @@ body._touch .menu__item_link {
   }
   .team__card_desc {
     padding-left: 17px;
-    margin: 40px auto 42px;
+    margin: 40px 0 42px;
   }
   .team__card .socials__icon {
     margin: 0 0 50px 18px;
@@ -890,8 +948,6 @@ body._touch .menu__item_link {
 article img {
   max-width: 740px;
   max-height: 490px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #desktop:checked ~ #slider {
@@ -956,8 +1012,8 @@ label, a {
 }
 
 #slides .content {
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #controls label {
@@ -984,7 +1040,6 @@ label, a {
   background: #5C3249;
   min-width: 45%;
 }
-
 .content__desc_text {
   margin: 0 auto;
   max-width: 60%;
@@ -997,7 +1052,6 @@ label, a {
   color: white;
   text-transform: capitalize;
 }
-
 .content__desc_author {
   margin: 20px auto 0;
   max-width: 60%;
@@ -1011,7 +1065,6 @@ label, a {
   text-transform: uppercase;
 }
 
-/* Checkpoints for Adaptive */
 @media (max-width: 1025px) {
   #slider {
     margin-left: -35px;
@@ -1019,7 +1072,7 @@ label, a {
 
   article img {
     max-width: 502px;
-    max-height: 332px;
+    min-height: 332px;
   }
 
   #desktop:checked ~ #slider {
@@ -1043,11 +1096,16 @@ label, a {
     line-height: 14px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 992px) {
   .article__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    max-width: 330px;
+    max-width: 340px;
+    margin: 0;
   }
 
   #slider {
@@ -1055,19 +1113,85 @@ label, a {
     margin-left: -15px;
   }
 
-  article img {
+  #desktop:checked ~ #slider {
     min-width: 330px;
-    min-height: 212px;
-    -o-object-fit: contain;
-       object-fit: contain;
+  }
+
+  .content__slider-pic {
+    max-width: 330px;
+  }
+
+  .content__desc {
+    padding: 27px 0 100px;
+    max-height: 330px;
+    max-width: 330px;
+  }
+  .content__desc_text {
+    text-align: center;
+    min-width: 275px;
+  }
+  .content__desc_author {
+    margin-left: 38px;
+    max-width: 100%;
+  }
+
+  #active {
+    margin: 1% auto 0;
+    max-width: 300px;
+  }
+
+  #controls {
+    margin: -5% 0 0 0;
+  }
+
+  #active label {
+    min-width: 9.5px;
+    min-height: 9.5px;
+  }
+
+  .slide-container {
+    padding: 0;
+  }
+
+  .content__slider-pic {
+    min-width: 50%;
+  }
+
+  .content__desc {
+    padding: 27px 0 0px;
+    max-height: 330px;
+    max-width: 330px;
+  }
+}
+@media (max-width: 576px) {
+  .article__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 340px;
+    margin: 0;
+  }
+
+  #slider {
+    margin: 0;
+    margin-left: -15px;
   }
 
   #desktop:checked ~ #slider {
     min-width: 330px;
   }
 
+  .content__slider-pic {
+    max-width: 330px;
+  }
+
   .content__desc {
     padding: 27px 0 100px;
+    max-height: 330px;
+    max-width: 330px;
   }
   .content__desc_text {
     text-align: center;
@@ -1096,11 +1220,20 @@ label, a {
     padding: 0;
   }
 }
+@media (max-width: 325px) {
+  .content__slider-pic {
+    min-width: 55%;
+    min-height: 212px;
+  }
+
+  #desktop:checked ~ #slider {
+    min-width: 320px;
+  }
+}
 .download {
   max-height: 430px;
   margin: 134px auto 114px;
 }
-
 .download__slogan {
   font-family: "Raleway", sans-serif;
   font-size: 30px;
@@ -1109,7 +1242,6 @@ label, a {
   text-align: center;
   color: #000000;
 }
-
 .download__desc {
   display: block;
   margin-top: 26px;
@@ -1121,7 +1253,6 @@ label, a {
   color: #000000;
   text-transform: uppercase;
 }
-
 .download__btn {
   margin: 47px auto 0;
   min-width: 370px;
@@ -1148,7 +1279,6 @@ label, a {
           box-shadow: 4px 4px 30px #FF4343;
 }
 
-/* Checkpoints for Adaptive */
 @media (max-width: 1025px) {
   .download {
     margin: 94px auto 70px;
@@ -1206,13 +1336,11 @@ label, a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
 .footer__inner_item {
   margin: 0;
   padding: 0;
   margin-bottom: 140px;
 }
-
 .footer__inner_title {
   margin-top: 72px;
   margin-bottom: 32px;
@@ -1227,12 +1355,10 @@ label, a {
   text-transform: uppercase;
   cursor: pointer;
 }
-
 .footer__inner_title:hover {
   color: #FFFFFF;
   text-decoration: underline;
 }
-
 .footer__inner_address {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -1286,7 +1412,6 @@ label, a {
   bottom: 0;
   width: 100%;
 }
-
 .copyright__text {
   margin: 0 auto;
   width: 370px;
@@ -1297,12 +1422,10 @@ label, a {
   line-height: 21px;
   text-align: center;
 }
-
 .copyright__text_head {
   color: #FFFFFF;
 }
 
-/* Checkpoints for Adaptive */
 @media (max-width: 1025px) {
   .footer__inner_title {
     font-size: 14px;
@@ -1332,9 +1455,34 @@ label, a {
     max-width: 314px;
   }
 }
-@media (max-width: 330px) {
+@media (max-width: 576px) {
+  .footer__item_socials {
+    margin-bottom: 0;
+  }
   .footer__inner {
     min-height: 540px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__inner_title {
+    margin: 30px auto;
+  }
+}
+@media (max-width: 330px) {
+  .footer__item_socials {
+    margin-bottom: 0;
+  }
+  .footer__inner {
+    min-height: 540px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1348,10 +1496,6 @@ label, a {
     margin: 35px auto 35px;
   }
 
-  .footer__item_socials {
-    margin-bottom: 0;
-  }
-
   .socials__title {
     margin: 0;
     margin-bottom: 35px;
@@ -1363,7 +1507,6 @@ label, a {
     margin-bottom: 35px;
     padding: 0;
   }
-
   .about__text {
     padding: 10px 10px 63px;
   }

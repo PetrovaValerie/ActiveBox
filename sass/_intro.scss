@@ -1,11 +1,12 @@
 .intro {
-  min-height: 750px;
-  background: #31344e url('../img/bg/main-bg.jpg') (center / cover) no-repeat;
-  color: #FFFFFF;
-  font-family: 'Raleway', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    min-height: 750px;
+    width: 100%;
+    background: #31344e url('../img/bg/main-bg.jpg') (center / cover) no-repeat;
+    color: #FFFFFF;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &__inner {
     padding: 0 55px;
@@ -34,35 +35,32 @@
 }
 
 .intro__btn {
-  margin: 78px auto 120px;
-  display: block;
-  color: #FFFFFF;
-  padding: 10px auto;
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 900;
-  text-align: center;
-  text-transform: uppercase;
-  min-width: 370px;
-  min-height: 77px;
-  background: #FF4343;
-  transition: background .2s .2s ease-in-out;
-
-  &:hover {
-    background: #E71414;
-  }
-
-  &:active {
+    margin: 78px auto 120px;
+    display: block;
+    color: #FFFFFF;
+    padding: 10px auto;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 370px;
+    min-height: 77px;
     background: #FF4343;
-    box-shadow: 4px 4px 30px #FF4343;
-  }
+    transition: background .2s .2s ease-in-out;
+
+    &:hover {
+      background: #E71414;
+    }
+
+    &:active {
+      background: #FF4343;
+      box-shadow: 4px 4px 30px #FF4343;
+    }
 }
 
-/* Checkpoints for Adaptive */
-
-@media (max-width: 1230px) {}
-
 @media (max-width: 1030px) {
+
   .intro {
     min-height: 770px;
 
@@ -80,17 +78,13 @@
 
     &__btn {
       min-width: 313px;
-      
     }
   }
 }
 
-@media (max-width: 992px) {
-
-
-}
 
 @media (max-width: 768px) {
+  
   .intro {
     height: auto;
     padding-top: 130px;
@@ -98,12 +92,12 @@
   }
 }
 
-@media (max-width: 576px) {}
-
 @media (max-width: 330px) {
-    .intro {
+
+  .intro {
     min-height: 574px;
     padding-top: 70px;
+        
     &__inner {
       padding: 0;
     }

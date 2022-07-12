@@ -1,47 +1,40 @@
-body._lock {
-  overflow: hidden;
-}
-
 .header {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 10;
-	// position: fixed;
-	// background: #31344e81;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 10;
 }
-
 
 .menu {
-  width: 100%;
-  margin: 0 auto;
-	display: flex;
-	padding: 0 30px;
-	align-items: center;
-	justify-content: space-between;
-	min-height: 95px;
-  border-bottom: 1px solid #babbc5a3;
-}
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		padding: 0 30px;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 95px;
+		border-bottom: 1px solid #babbc5a3;
 
-.menu__logo {
-  display: block;
-  position: relative;
-	z-index: 5;
-}
+		&__logo {
+			display: block;
+			position: relative;
+			z-index: 5;
+			}
 
-.menu__logo_img {
-  max-width: 184px;
-  max-height: 37px;
+		&__logo_img {
+			max-width: 184px;
+			max-height: 37px;
+		}
 }
 
 .menu__list > li{ 
-	position: relative;
+		position: relative;
 
 }
 
 .icon {
-	display: none; /*скрываем бургер на большом экране*/
+		display: none; /*скрываем бургер на большом экране*/
 }
 
 .menu__item {
@@ -49,50 +42,49 @@ body._lock {
     padding: 43px 30px;
     border-bottom: 3px solid transparent;
 
-  a {
-    color: #ffffffe8;
-    text-decoration: none;
-  }
+		&_link {
+		font-family: 'Raleway', sans-serif;
+		font-size: 13px;
+		font-weight: 700;
+		line-height: 15px;
+		text-align: center;
+		color: white;
+		text-transform: uppercase;
+		}
 
-  &:hover {
-    border-bottom: 3px solid #BABBC5;
-  }
+		a {
+			color: #ffffffe8;
+			text-decoration: none;
+		}
 
-  &:active {
-    border-bottom: 3px solid #E71414;
-  }
+		&:hover {
+			border-bottom: 3px solid #BABBC5;
+		}
+
+		&:active {
+			border-bottom: 3px solid #E71414;
+		}
 }
+
 	.menu__item a:active {
 		color: #E71414;
-	}
-
-
-.menu__item_link {
-  font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 15px;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
 }
 
-
 body._touch .menu__list > li {
-	display: flex;
-	align-items: center;
+		display: flex;
+		align-items: center;
 }
 
 body._touch .menu__item_link {
-	flex: 1 1 auto; /*Сделали на всю ширину*/
+		flex: 1 1 auto; /*Сделали на всю ширину*/
 }
 
 
 @media (max-width: 1030px) {
 
   .menu__item_link {
-  font-size: 12px;
-  line-height: 14px;
+		font-size: 12px;
+		line-height: 14px;
   }
 }
 
@@ -105,24 +97,20 @@ body._touch .menu__item_link {
 }
 
 @media (max-width: 767px) {
-	
-	.header {
-		position: fixed;
-	}
 
   .menu {
     border-bottom: 0;
     min-height: 56px;
     padding: 0 15px 0 25px;
+
+		&__logo_img {
+			max-width: 136px;
+			max-height: 33px;
+		}
   }
 
-  .menu__logo_img {
-  max-width: 136px;
-  max-height: 33px;
-}
-
 	.icon {
-    margin: 25px;
+		margin: 25px;
 		z-index: 5;
 		display: block;
 		position: relative;
@@ -144,7 +132,7 @@ body._touch .menu__item_link {
 
 	.icon::before,
 	.icon::after {
-		content: "";
+	content: "";
 	}
 
 	.icon::before {
@@ -165,6 +153,10 @@ body._touch .menu__item_link {
 		потому что ранее задали transition*/
 	}
 
+	body._lock {
+		overflow: hidden;
+	}
+
 	.icon._active::before {
 		top: 50%;
 		transform: rotate(-45deg) translate(0px, -50%);
@@ -176,30 +168,39 @@ body._touch .menu__item_link {
 	}
 
 	.menu__body {
-    display: none;
+		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
-    text-align-last: left;
+		text-align-last: left;
 		width: 100%;
 		min-height: 574px;
-    background: #31344e url('../img/bg/main-bg.jpg') (center / cover) no-repeat;;
+		background: #31344e url('../img/bg/main-bg.jpg') (center / cover) no-repeat;;
 		padding: 100px 30px 30px 30px;
 		transition: left 0.3s ease 0s; /*анимация для св-ва left*/
 		overflow: auto;/*будет появляться возможность скролла
 		так высота меню вместится в любой экран и мы сможем проскролить
 		и добраться до всех пунктов меню*/
-    
 	}
 
-  .menu__list {
-    border-top: 1px solid rgba(237, 80, 80, 0.548);
-  }
+	.menu__list {
+		display: flex;
+		flex-direction: column;
+
+		&::before {
+			content: '';
+			display: block;
+			min-width: 330px;
+			height: 1px;
+			background: rgba(237, 80, 80, 0.548);
+			margin: -30px 0 0 -30px;
+		}
+	}
 
 	.menu__body._active {
-    display: block;
+		display: flex;
+		flex-direction: column;
 		left: 0;
-    // max-height: 574px;
 	}
 	
 	.menu__body::before {
@@ -209,12 +210,10 @@ body._touch .menu__item_link {
 		top: 0;
 		left: 0;
 		height: 70px;
-		// background-color: #912105;
 		z-index: 2;
 	}
 
 	.menu__list > li {
-		flex-wrap: wrap;
 		margin: 0 0 30px 0;
 	}
 
@@ -222,29 +221,25 @@ body._touch .menu__item_link {
 		margin-bottom: 0;
 	}
 
-  .menu__item {
-      padding: 15px;
-      // border-bottom: none;
+	.menu__item {
+		padding: 15px;
 
-    &:hover {
-      border-bottom: none;
-  }
-    &:active {
-      border-bottom: none;
-  }
-}
+		&:hover {
+			border-bottom: none;
+		}
 
-  .menu__item:first-child {
-      padding: 15px;
-      padding-top: 70px;
-}
+		&:active {
+			border-bottom: none;
+		}
 
-  .menu__item:last-child {
-      padding: 15px;
-      padding-bottom: 190px;
-}
-}
+		&:first-child {
+			padding: 15px;
+			padding-top: 70px;
+		}
 
-@media (max-width: 335px) {
-
+		&:last-child {
+			padding: 15px;
+			padding-bottom: 190px;
+		}
+	}
 }

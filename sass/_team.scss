@@ -1,10 +1,10 @@
 .team {
-  margin: 114px auto;
+    margin: 114px auto;
 }
 
 .team__inner {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .team__card {
@@ -13,81 +13,77 @@
   &:last-of-type {
     margin-right: 0;
   }
-}
 
-.team__card_img {
-  display: block;
-  max-width: 270px;
-  max-height: 270px;
-  cursor: pointer;
-}
-
-.team__card_name {
-  margin-top: 35px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  text-align: left;
-  color: #2D3033;
-
-  &:hover {
-    text-decoration: underline;
+  &_img {
+    display: block;
+    max-width: 270px;
+    max-height: 270px;
     cursor: pointer;
   }
-}
-
-.team__card_position {
-  display: block;
-  margin-top: 8px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: left;
-  color: #FF4343;
-  text-transform: uppercase;
-
-  &:hover {
-    cursor: pointer;
+  
+  &_name {
+    margin-top: 35px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: left;
+    color: #2D3033;
+    
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
   }
-}
 
-.team__card_desc {
-  margin: 22px auto 37px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: left;
-  color: #6C7279;
+  &_position {
+    display: block;
+    margin-top: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #FF4343;
+    text-transform: uppercase;
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
 
-  &:hover {
-    cursor: pointer;
+  &_desc {
+    max-width: 270px;
+    margin: 22px 0 37px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+    color: #6C7279;
+    
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
 .socials__icon {
-  padding: 10px;
-  margin-right: 2px;
-  display: inline-block;
-  border: 1px solid #C6CBCD;
-  font-size: 18px;
-  text-align: center;
-  color: #C6CBCD;
-  min-width: 39px;
-  min-height: 39px;
-  cursor: pointer;
+    padding: 10px;
+    margin-right: 2px;
+    display: inline-block;
+    border: 1px solid #C6CBCD;
+    font-size: 18px;
+    text-align: center;
+    color: #C6CBCD;
+    min-width: 39px;
+    min-height: 39px;
+    cursor: pointer;
 
-  &:hover {
-    color: rgb(119, 132, 229);
-    border: 1px solid rgb(119, 132, 229);
-  }
-}
-
-/* Checkpoints for Adaptive */
-
-@media (max-width: 1230px) {
+    &:hover {
+      color: rgb(119, 132, 229);
+      border: 1px solid rgb(119, 132, 229);
+    }
 }
 
 @media (max-width: 1025px) {
@@ -111,6 +107,7 @@
       line-height: 16px;
     }
   }
+
   .socials__icon {
     min-width: 32px;
     min-height: 32px;
@@ -119,13 +116,19 @@
 
 @media (max-width: 992px) {
 
+  .team__inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team__card {
+    flex: 0 1 290px;
+    margin-top: 25px;
+  }
 }
 
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {}
-
 @media (max-width: 330px) {
+
   .team {
     margin: 35px auto;
 
@@ -133,8 +136,9 @@
       flex-direction: column;
     }
   }
+
   .team__card {
-    margin-right: 0;
+    margin: 0;
 
     &_img {
     margin: 0 auto;
@@ -142,18 +146,21 @@
     min-height: 227px;  
     object-fit: none;
     }
+
     &_name {
       padding-left: 17px;
     }
+
     &_position {
       padding-left: 17px;
     }
+
     &_desc {
       padding-left: 17px;
-      margin: 40px auto 42px;
+      margin: 40px 0 42px;
     }
-    .socials {
 
+    .socials {
       &__icon {
       margin: 0 0 50px 18px;
       padding: 7px;

@@ -1,60 +1,57 @@
 .download {
-  max-height: 430px;
-  margin: 134px auto 114px;
+    max-height: 430px;
+    margin: 134px auto 114px;
+
+    &__slogan {
+      font-family: 'Raleway', sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 35px;
+      text-align: center;
+      color: #000000;
+    }
+
+    &__desc {
+      display: block;
+      margin-top: 26px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 21px;
+      text-align: center;
+      color: #000000;
+      text-transform: uppercase;
+    }
+
+    &__btn {
+      margin: 47px auto 0;
+      min-width: 370px;
+      min-height: 80px;
+      display: block;
+      text-align: center;
+      color: #FFFFFF;
+      background: #FF4343;
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      font-weight: 900;
+      line-height: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      transition: background .2s .2s linear;
+      
+      &:hover {
+        background: #E71414;
+      }
+      
+      &:active {
+        background: #FF4343;
+        box-shadow: 4px 4px 30px #FF4343;
+      }
+    }
 }
-
-.download__slogan {
-  font-family: 'Raleway', sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 35px;
-  text-align: center;
-  color: #000000;
-}
-
-.download__desc {
-  display: block;
-  margin-top: 26px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 21px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.download__btn {
-  margin: 47px auto 0;
-  min-width: 370px;
-  min-height: 80px;
-  display: block;
-  text-align: center;
-  color: #FFFFFF;
-  background: #FF4343;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background .2s .2s linear;
-
-  &:hover {
-    background: #E71414;
-  }
-
-  &:active {
-    background: #FF4343;
-    box-shadow: 4px 4px 30px #FF4343;
-  }
-}
-
-/* Checkpoints for Adaptive */
-
-@media (max-width: 1230px) {}
 
 @media (max-width: 1025px) {
+
   .download {
     margin: 94px auto 70px;
 
@@ -62,10 +59,12 @@
       font-size: 24px;
       line-height: 28px;
     }
+
     &__desc {
       font-size: 14px;
       line-height: 16px;
     }
+
     &__btn {
       min-width: 313px;
       min-height: 77px;
@@ -74,14 +73,6 @@
     }
   }
 }
-
-@media (max-width: 992px) {
-
-}
-
-@media (max-width: 768px) {}
-
-@media (max-width: 576px) {}
 
 @media (max-width: 330px) {
   .download {
