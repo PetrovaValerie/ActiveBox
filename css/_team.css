@@ -9,6 +9,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .team__card {
@@ -81,7 +82,7 @@
   border: 1px solid rgb(119, 132, 229);
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
   .team__card {
     margin-right: 20px;
   }
@@ -118,8 +119,9 @@
 
   .team__card {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 290px;
-            flex: 0 1 290px;
+        -ms-flex: 0 1 350px;
+            flex: 0 1 350px;
+    margin: 0;
     margin-top: 25px;
   }
 }
@@ -152,7 +154,7 @@
   }
   .team__card_desc {
     padding-left: 17px;
-    margin: 40px auto 42px;
+    margin: 40px 0 42px;
   }
   .team__card .socials__icon {
     margin: 0 0 50px 18px;

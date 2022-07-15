@@ -10,6 +10,7 @@
 
     &__inner {
       padding: 0 55px;
+      margin: 0 auto;
     }
 
     &__title {
@@ -25,6 +26,7 @@
     }
 
     &__descr {
+      margin: 0 auto;
       padding-top: 28px;
       font-size: 24px;
       font-weight: 400;
@@ -61,8 +63,8 @@
 
 @media (max-width: 1030px) {
 
-  .intro {
-    min-height: 770px;
+    .intro {
+      min-height: 770px;
 
     &__title {
       max-width: 920px;
@@ -85,10 +87,14 @@
 
 @media (max-width: 768px) {
   
-  .intro {
-    height: auto;
-    padding-top: 130px;
-    padding-bottom: 30px;
+    .intro {
+      height: auto;
+      padding-top: 70px;
+      padding-bottom: 30px;
+
+    &__inner {
+      padding: 0;
+    }
 
     &__title {
       margin-top: 55px;
@@ -96,6 +102,11 @@
       font-size: 36px;
       line-height: 42px;
     }
+
+    &__descr {
+      max-width: 600px;
+    }
+
     &__btn {
       margin: 48px auto 50px;
       min-width: 240px;
@@ -106,9 +117,9 @@
 
 @media (max-width: 330px) {
 
-  .intro {
-    min-height: 574px;
-    padding-top: 70px;
+    .intro {
+      min-height: 574px;
+      padding-top: 70px;
         
     &__inner {
       padding: 0;

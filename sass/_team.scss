@@ -5,67 +5,68 @@
 .team__inner {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 .team__card {
-  margin-right: 40px;
+    margin-right: 40px;
 
-  &:last-of-type {
-    margin-right: 0;
-  }
+    &:last-of-type {
+      margin-right: 0;
+    }
 
-  &_img {
-    display: block;
-    max-width: 270px;
-    max-height: 270px;
-    cursor: pointer;
-  }
+    &_img {
+      display: block;
+      max-width: 270px;
+      max-height: 270px;
+      cursor: pointer;
+    }
   
-  &_name {
-    margin-top: 35px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 28px;
-    text-align: left;
-    color: #2D3033;
+    &_name {
+      margin-top: 35px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      text-align: left;
+      color: #2D3033;
     
       &:hover {
         text-decoration: underline;
         cursor: pointer;
+      }
     }
-  }
 
-  &_position {
-    display: block;
-    margin-top: 8px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-    color: #FF4343;
-    text-transform: uppercase;
-    
-    &:hover {
-      cursor: pointer;
+    &_position {
+      display: block;
+      margin-top: 8px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: #FF4343;
+      text-transform: uppercase;
+      
+      &:hover {
+        cursor: pointer;
+      }
     }
-  }
 
-  &_desc {
-    max-width: 270px;
-    margin: 22px 0 37px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 21px;
-    text-align: left;
-    color: #6C7279;
-    
-    &:hover {
-      cursor: pointer;
+    &_desc {
+      max-width: 270px;
+      margin: 22px 0 37px;
+      font-family: 'Raleway', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: #6C7279;
+      
+      &:hover {
+        cursor: pointer;
+      }
     }
-  }
 }
 
 .socials__icon {
@@ -86,85 +87,87 @@
     }
 }
 
-@media (max-width: 1025px) {
-  .team__card {
-    margin-right: 20px;
-    
-    &_img {
-      max-width: 227px;
-      max-height: 227px;
-    }
-    &_name {
-      font-size: 18px;
-      line-height: 21px;
-    }
-    &_position {
-      font-size: 14px;
-      line-height: 16px;
-    }
-    &_desc {
-      font-size: 14px;
-      line-height: 16px;
-    }
-  }
+@media (max-width: 1200px) {
 
-  .socials__icon {
-    min-width: 32px;
-    min-height: 32px;
-  }
+    .team__card {
+      margin-right: 20px;
+      
+      &_img {
+        max-width: 227px;
+        max-height: 227px;
+      }
+      &_name {
+        font-size: 18px;
+        line-height: 21px;
+      }
+      &_position {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      &_desc {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+
+    .socials__icon {
+      min-width: 32px;
+      min-height: 32px;
+    }
 }
 
 @media (max-width: 992px) {
 
-  .team__inner {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
+    .team__inner {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-  .team__card {
-    flex: 0 1 290px;
-    margin-top: 25px;
-  }
+    .team__card {
+      flex: 0 1 350px;
+      margin: 0;
+      margin-top: 25px;
+    }
 }
 
 @media (max-width: 330px) {
 
-  .team {
-    margin: 35px auto;
+    .team {
+      margin: 35px auto;
 
     &__inner {
       flex-direction: column;
-    }
-  }
-
-  .team__card {
-    margin: 0;
-
-    &_img {
-    margin: 0 auto;
-    min-width: 280px;
-    min-height: 227px;  
-    object-fit: none;
+      }
     }
 
-    &_name {
-      padding-left: 17px;
-    }
+    .team__card {
+      margin: 0;
 
-    &_position {
-      padding-left: 17px;
-    }
+      &_img {
+      margin: 0 auto;
+      min-width: 280px;
+      min-height: 227px;  
+      object-fit: none;
+      }
 
-    &_desc {
-      padding-left: 17px;
-      margin: 40px 0 42px;
-    }
+      &_name {
+        padding-left: 17px;
+      }
 
-    .socials {
-      &__icon {
-      margin: 0 0 50px 18px;
-      padding: 7px;
+      &_position {
+        padding-left: 17px;
+      }
+
+      &_desc {
+        padding-left: 17px;
+        margin: 40px 0 42px;
+      }
+
+      .socials {
+        &__icon {
+        margin: 0 0 50px 18px;
+        padding: 7px;
+      }
+      }
     }
-    }
-  }
 }

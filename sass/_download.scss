@@ -52,45 +52,46 @@
 
 @media (max-width: 1025px) {
 
-  .download {
-    margin: 94px auto 70px;
+    .download {
+      margin: 94px auto 70px;
 
-    &__slogan {
-      font-size: 24px;
-      line-height: 28px;
-    }
+      &__slogan {
+        font-size: 24px;
+        line-height: 28px;
+      }
 
-    &__desc {
-      font-size: 14px;
-      line-height: 16px;
-    }
+      &__desc {
+        font-size: 14px;
+        line-height: 16px;
+      }
 
-    &__btn {
-      min-width: 313px;
-      min-height: 77px;
-      font-size: 18px;
-      line-height: 21px;
+      &__btn {
+        min-width: 313px;
+        min-height: 77px;
+        font-size: 18px;
+        line-height: 21px;
+      }
     }
-  }
 }
 
 @media (max-width: 330px) {
-  .download {
-    margin: 43px auto ;
 
-    &__slogan {
-      margin: 0 auto;
-      font-size: 18px;
-      line-height: 21px;
-      max-width: 280px;
+    .download {
+      margin: 43px auto ;
+
+      &__slogan {
+        margin: 0 auto;
+        font-size: 18px;
+        line-height: 21px;
+        max-width: 280px;
+      }
+      &__desc {
+        font-size: 13px;
+        line-height: 15px;
+      }
+      &__btn {
+        min-width: 280px;
+        margin: 15px auto 0;
+      }
     }
-    &__desc {
-      font-size: 13px;
-      line-height: 15px;
-    }
-    &__btn {
-      min-width: 280px;
-      margin: 15px auto 0;
-    }
-  }
 }

@@ -17,6 +17,7 @@
 }
 .intro__inner {
   padding: 0 55px;
+  margin: 0 auto;
 }
 .intro__title {
   max-width: 1025px;
@@ -30,6 +31,7 @@
   cursor: pointer;
 }
 .intro__descr {
+  margin: 0 auto;
   padding-top: 28px;
   font-size: 24px;
   font-weight: 400;
@@ -84,8 +86,25 @@
 @media (max-width: 768px) {
   .intro {
     height: auto;
-    padding-top: 130px;
+    padding-top: 70px;
     padding-bottom: 30px;
+  }
+  .intro__inner {
+    padding: 0;
+  }
+  .intro__title {
+    margin-top: 55px;
+    max-width: 280px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .intro__descr {
+    max-width: 600px;
+  }
+  .intro__btn {
+    margin: 48px auto 50px;
+    min-width: 240px;
+    min-height: 60px;
   }
 }
 @media (max-width: 330px) {

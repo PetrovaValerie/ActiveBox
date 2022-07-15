@@ -1,18 +1,26 @@
 .features {
-  &__inner {
-    margin: 100px 0;
-    width: 100%;
-  }
+  width: 100%;
+  height: 100%;
+  margin: 10px auto 20px;
+  padding: 0;
+
 
   &__row {
+    width: 100%;
+    height: 100%;
     padding: 0;
-    margin: 0 0 80px 0px;
+    margin: 100px 0 0;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 .features__card {
+  padding: 0;
+  margin: 0 20px 0 0;
+  width: 31%;
+
   &_icon {
     display: block;
     margin: 0 auto;
@@ -22,7 +30,8 @@
   }
 
   &_desc {
-    margin-right: 20px;
+    // margin-right: 20px;
+    margin-bottom: 80px;
     min-width: 370px;
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -33,7 +42,7 @@
   }
 
   &_title {
-      margin: 45px auto;
+    margin: 45px auto;
     font-family: 'Raleway', sans-serif;
     font-size: 24px;
     font-weight: 900;
@@ -49,28 +58,27 @@
   }
 }
 
-@media (max-width: 1025px) {
-	
+@media (max-width: 1170px) {
+
   .features {
     &__row {
-      margin: 0 0 40px 0;
-    }
+    margin: 100px auto 40px;
+  }
 
-    &__card_icon {
-      max-width: 85px;
-      max-height: 85px;
-    }
+  &__card_icon {
+    max-width: 85px;
+    max-height: 85px;
+  }
 
-    &__card_title {
-      margin: 45px auto 25px;
-      font-size: 18px;
-      line-height: 21px;
-    }
+  &__card_title {
+    margin: 45px auto 25px;
+  }
 
-    &__card_desc {
-      font-size: 14px;
-      line-height: 16px;
-      min-width: 314px;
+  &__card_desc {
+    margin-bottom: 40px;
+    font-size: 14px;
+    line-height: 16px;
+    min-width: 314px;
     }
   }
 }
@@ -78,15 +86,11 @@
 @media (max-width: 992px) {
 
   .features {
-    &__row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
+
     &__card {
-    flex: 1 1 335px;
-  }
+      width: 50%;
+      margin: 0;
+    }
 
     &__card_icon {
     margin-top: 30px;
@@ -94,26 +98,32 @@
 
     &__card_desc {
     max-width: 300px;
-    margin: 0 auto;
-  }
+    margin: 0 auto 40px;
+    }
 	}
+}
+
+@media (max-width: 690px) {
+
+    .features {
+    &__row {
+      flex-direction: column;
+      margin: 0;
+    }
+    &__card {
+      width: 100%;
+    }
+    &__card_desc {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 @media (max-width: 330px) {
 
   .features {
-
-    &__inner {
-      margin: 40px auto 0;
-    }
-
     &__row {
-      flex-direction: column;
-      margin: 0;
-    }
-
-    &__card {
-      padding: 0;
+      margin: 40px auto 0;
     }
 
     &__card_icon { 

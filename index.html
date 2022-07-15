@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="https://kit.fontawesome.com/b2e8fbb2d7.js" crossorigin="anonymous"></script>
 	<!-- <link rel="stylesheet" href="./css/style.css"> -->
-	<link rel="stylesheet" href="./sass/style.scss">
+	<link rel="stylesheet" href="./sass/_style.scss">
 	<title>ActiveBox</title>
 </head>
 <body>
 																<!--HEADER---->
 <header class="header">
-	<div class="header-container">
+	<div class="container header__container">
 		<div class="header__wrapper menu">
 				<a class="menu__logo" href="#">
 					<img class="menu__logo_img" src="img/logo/ActiveBox-Logo.png" alt="logo">
@@ -57,7 +57,6 @@
 																<!--FEATURES---->	
 	<section class="features">
 		<div class="container">
-		<div class="features__inner">
 			<div class="features__row">
 				<div class="features__card">
 					<img class="features__card_icon" src="img/icons/easily-customized.png" alt="#">
@@ -80,8 +79,6 @@
 					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
 					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
-			</div>
-			<div class="features__row">
 				<div class="features__card">
 					<img class="features__card_icon" src="img/icons/clean-code.png" alt="#">
 					<h2 class="features__card_title">Clean Code</h2>
@@ -103,96 +100,109 @@
 					egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.
 					Donec ullamcorper nulla non metus auctor fringilla.</p>
 				</div>
-			</div>
 		</div>
 		</div>
 	</section>
-																<!--PROJECTS---->	
+																<!--WORKS/PROJECTS---->
 	<section class="projects">
-		<div class="container" id="project-container">
-			<div class="projects__list upper-list">
-				<div class="projects__list_wrap">
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r1c1.png" alt="table">	
-						</div>
+		<div class="container-pro">
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r1c1-379w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r1c1-256w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r1c1-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r1c1-379w.jpg" alt="table">
+					</picture>
+					<div class="projects___info">
 						<h4 class="projects__inner_title">Project Name</h4>
 						<p class="projects__inner_text">User Interface Design</p>
-						</div>
 					</div>
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r1c2.png" alt="grey couch">	
-						</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-						</div>
-					</div>
-				</div>
-				<div class="projects__list_wrap">
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r1c3.png" alt="black couch">	
-						</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-						</div>
-					</div>
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r1c4.png" alt="two stools">
-						</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-						</div>
-					</div>				
 				</div>
 			</div>
-			<div class="projects__list lower-list">
-				<div class="projects__list_wrap">
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r2c1.png" alt="yellow chair">	
-						</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-						</div>
-					</div>
-					<div class="projects__item">
-						<div class="projects__inner">
-						<div class="projects__inner_img">
-						<img src="img/gallery/r2c2.png" alt="brown table">	
-						</div>
-						<h4 class="projects__inner_title">Project Name</h4>
-						<p class="projects__inner_text">User Interface Design</p>
-						</div>
-					</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r1c2-379w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r1c2-257w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r1c2-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r1c2-379w.jpg" alt="grey couch">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
 				</div>
-					<div class="projects__list_wrap">
-						<div class="projects__item">
-							<div class="projects__inner">
-							<div class="projects__inner_img">
-							<img src="img/gallery/r2c3.png" alt="black bed">
-							</div>
-							<h4 class="projects__inner_title">Project Name</h4>
-							<p class="projects__inner_text">User Interface Design</p>
-							</div>
-						</div>
-						<div class="projects__item">
-							<div class="projects__inner">
-							<div class="projects__inner_img">
-							<img src="img/gallery/r2c4.png" alt="beige couch">	
-							</div>
-							<h4 class="projects__inner_title">Project Name</h4>
-							<p class="projects__inner_text">User Interface Design</p>
-							</div>
-						</div>
-					</div>
+			</div>		
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r1c3-380w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r1c3-257w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r1c3-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r1c3-380w.jpg" alt="black couch">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
+			</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r1c4-378w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r1c4-256w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r1c4-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r1c4-378w.jpg" alt="two stouls">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
+			</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r2c1-378w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r2c1-256w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r2c1-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r2c1-378w.jpg" alt="yellow chair">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
+			</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r2c2-379w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r2c2-257w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r2c2-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r2c2-379w.jpg" alt="big wooden kitchen table">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
+			</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r2c3-379w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r2c3-257w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r2c3-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r2c3-379w.jpg" alt="black bed">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
+			</div>
+			<div class="projects__item">
+				<div class="projects__inner">
+					<picture>
+						<source srcset="img/gallery/pc/r2c4-378w.jpg" type="image/jpg" media="(min-width:1100px)">
+						<source srcset="img/gallery/tablet/r2c4-256w.jpg" type="image/jpg" media="(min-width:700px)">
+						<source srcset="img/gallery/mobile/r2c4-160w.jpg" type="image/jpg" media="(max-width:700px)">
+						<img class="projects__inner_img" src="img/gallery/pc/r2c4-378w.jpg" alt="brown couch">
+					</picture>
+				<h4 class="projects__inner_title">Project Name</h4>
+				<p class="projects__inner_text">User Interface Design</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -257,7 +267,6 @@
 	</section>
 																<!--SLIDER---->
 	<section class="slide">
-		<div class="container slide-container">
 			<div class="all">
 				<input checked type="radio" name="respond" id="desktop">
 				<article id="slider">
@@ -283,7 +292,7 @@
 									<img class="content__slider-pic" src="img/slide/good-faces.jpg" alt="girl is sitting beside the monitor">
 									<div class="content__desc">
 									<p class="content__desc_text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-									Autem, dolores, odit, quo maiores . Aenean eu leo.”</p>
+									Autem, dolores, odit, quo maiores. Aenean eu leo.”</p>
 									<span class="content__desc_author">Susan Sims, Interaction Designer at XYZ</span>
 									</div>
 									</div>
@@ -334,7 +343,6 @@
 					</div>
 				</article>
 			</div>
-		</div>
 	</section>
 																<!--DOWNLOAD---->
 	<div class="download">
@@ -356,9 +364,11 @@
 			</div>
 			<div class="footer__inner_item footer__item--socials">
 				<h5 class="footer__inner_title socials__title">Share with love</h5>
-				<i class="fa-brands fa-facebook-f social__icon"></i>
-				<i class="fa-brands fa-twitter social__icon"></i>
-				<i class="fa-brands fa-linkedin social__icon"></i>			
+				<div class="socials__icons">
+					<i class="fa-brands fa-facebook-f social__icon"></i>
+					<i class="fa-brands fa-twitter social__icon"></i>
+					<i class="fa-brands fa-linkedin social__icon"></i>			
+				</div>
 			</div>
 			<div class="footer__inner_item footer__item--about">
 				<h5 class="footer__inner_title about__title">About Activebox</h5>
